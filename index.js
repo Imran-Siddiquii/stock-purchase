@@ -67,8 +67,10 @@ function calculate() {
     else{
         if(profit>=loss){
             output.innerText= `The profit amount is ${profit} and profit percentage is ${profitPriceInPercentage}`
+            output.style.background="blue"
         }else{
             output.innerText= `The loss amount is ${profit} and loss percentage is ${profitPriceInPercentage}`
+            output.style.background="orange"
         }
     }
 }
