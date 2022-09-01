@@ -59,6 +59,9 @@ function calculate() {
         output.innerText= `Please fill all the values`
     }else if(quantity.value <= 0){
         output.innerText= `Quantity must be positive and greater zero`
+    }else if(profit===loss){
+        output.innerText= `No profit no loss`
+
     }
    //output
     else{
