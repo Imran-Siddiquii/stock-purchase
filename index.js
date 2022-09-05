@@ -55,9 +55,13 @@ function calculate() {
     //error handling 
     
 
-    if((initialPrice.value && quantity.value && currentPrice.value)===''){
+    if((initialPrice.value && quantity.value && currentPrice.value) ===''){
         output.innerText= `Please fill all the values`
-    }else if(quantity.value <= 0){
+    }else if(initialPrice.value <= 0){
+        output.innerText= `initail price must be positive and greater zero`
+    }
+
+    else if(quantity.value <= 0){
         output.innerText= `Quantity must be positive and greater zero`
     }else if(profit===loss){
         output.innerText= `No profit no loss`
